@@ -1,0 +1,41 @@
+{
+  "name": "suwizx",
+  "private": true,
+  "type": "module",
+  "workspaces": {
+    "packages": [
+      "apps/*",
+      "packages/*"
+    ],
+    "catalog": {
+      "hono": "^4.8.2",
+      "@trpc/server": "^11.5.0",
+      "better-auth": "^1.4.5",
+      "dotenv": "^17.2.2",
+      "@trpc/client": "^11.5.0",
+      "@libsql/client": "^0.14.0",
+      "libsql": "^0.5.22"
+    }
+  },
+  "scripts": {
+    "ruler:apply": "bunx @intellectronica/ruler@latest apply --local-only",
+    "dev": "turbo dev",
+    "build": "turbo build",
+    "check-types": "turbo check-types",
+    "dev:native": "turbo -F native dev",
+    "dev:web": "turbo -F web dev",
+    "dev:server": "turbo -F server dev",
+    "db:push": "turbo -F @suwizx/db db:push",
+    "db:generate": "turbo -F @suwizx/db db:generate"
+  },
+  "dependencies": {
+    "dotenv": "^17.2.2",
+    "zod": "^4.1.11"
+  },
+  "devDependencies": {
+    "turbo": "^2.5.4",
+    "@types/node": "^22.13.11",
+    "@cloudflare/workers-types": "^4.20250822.0"
+  },
+  "packageManager": "bun@1.2.21"
+}
