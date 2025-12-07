@@ -11,12 +11,13 @@ export default function Providers({ children }: { children: React.ReactNode }) {
 		<ThemeProvider
 			attribute="class"
 			defaultTheme="system"
+			forcedTheme="system"
 			enableSystem
 			disableTransitionOnChange
 		>
 			<QueryClientProvider client={queryClient}>
 				{children}
-				<ReactQueryDevtools />
+				{/* <ReactQueryDevtools /> */}
 			</QueryClientProvider>
 			<Toaster richColors />
 		</ThemeProvider>
