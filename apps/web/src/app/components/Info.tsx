@@ -42,8 +42,8 @@ export default function Info() {
       <ProgressiveImage
         alt="Suwijak Promsatid"
         className="aspect-square w-[150px] rounded-full object-cover object-top"
-        normal="/images/suwijak-promsatid-lossy.jpg"
-        ting="/images/suwijak-promsatid-optimize.jpg"
+        normal="./images/suwijak-promsatid-lossy.jpg"
+        small="./images/suwijak-promsatid-optimize.jpg"
       />
       <div className="flex flex-col gap-2">
         <h1 className="font-bold text-2xl">
@@ -72,6 +72,35 @@ export default function Info() {
                 </TooltipContent>
               </Tooltip>
             ))}
+            <Tooltip>
+              <TooltipTrigger asChild>
+                <Link
+                  href={"https://webring.wonderful.software#suwizx.dev"}
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  title="วงแหวนเว็บ"
+                  
+                >
+                  <img
+                    alt="วงแหวนเว็บ"
+                    width="22"
+                    height="22"
+                    src="https://webring.wonderful.software/webring.black.svg"
+                    className="dark:hidden block"
+                  />
+                  <img
+                    alt="วงแหวนเว็บ"
+                    width="22"
+                    height="22"
+                    src="https://webring.wonderful.software/webring.white.svg"
+                    className="hidden dark:block"
+                  />
+                </Link>
+              </TooltipTrigger>
+              <TooltipContent>
+                <p>Webring</p>
+              </TooltipContent>
+            </Tooltip>
           </div>
         </div>
       </div>

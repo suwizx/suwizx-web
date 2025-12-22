@@ -182,7 +182,7 @@ const tools_skills = [
   {
     name: "Bun.sh",
     icon: SiBun,
-    color: "#000000",
+    color: "#FF73A8",
     link: "https://bun.sh/",
   },
   {

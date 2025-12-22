@@ -20,17 +20,17 @@ const useProgressiveImg = (
 };
 
 export default function ProgressiveImage({
-	ting,
+	small,
 	normal,
 	alt,
 	className,
 }: {
-	ting: string;
+	small: string;
 	normal: string;
 	alt: string;
 	className?: ClassNameValue;
 }) {
-	const [src, { blur }] = useProgressiveImg(ting, normal);
+	const [src, { blur }] = useProgressiveImg(small, normal);
 	return (
 		<img
 			className={twMerge(className)}
