@@ -5,21 +5,25 @@ import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
 import { queryClient } from "@/utils/trpc";
 import { ThemeProvider } from "./theme-provider";
 import { Toaster } from "./ui/sonner";
+import Snowfall from "react-snowfall";
 
 export default function Providers({ children }: { children: React.ReactNode }) {
 	return (
-		<ThemeProvider
-			attribute="class"
-			defaultTheme="system"
-			forcedTheme="system"
-			enableSystem
-			disableTransitionOnChange
+    <ThemeProvider
+      attribute="class"
+      defaultTheme="system"
+      forcedTheme="system"
+      enableSystem
+      disableTransitionOnChange
 		>
-			<QueryClientProvider client={queryClient}>
-				{children}
-				{/* <ReactQueryDevtools /> */}
-			</QueryClientProvider>
-			<Toaster richColors />
-		</ThemeProvider>
-	);
+			<div className="fixed w-screen h-screen inset-0 pointer-events-none">
+      <Snowfall />
+			</div>
+      <QueryClientProvider client={queryClient}>
+        {children}
+        {/* <ReactQueryDevtools /> */}
+      </QueryClientProvider>
+      <Toaster richColors />
+    </ThemeProvider>
+  );
 }
