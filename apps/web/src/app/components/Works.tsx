@@ -78,7 +78,7 @@ const works: Work[] = [
       normal: "./works/lossless/itgg.png",
       small: "./works/lossy/itgg-lossy.jpg",
     },
-    link: "https://itgg.suwizx.dev",
+    // link: "https://itgg.suwizx.dev",
   }
 ];
 

@@ -1,11 +1,11 @@
 "use client";
 
 import { QueryClientProvider } from "@tanstack/react-query";
-import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
+// import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
 import { queryClient } from "@/utils/trpc";
 import { ThemeProvider } from "./theme-provider";
 import { Toaster } from "./ui/sonner";
-import Snowfall from "react-snowfall";
+// import Snowfall from "react-snowfall";
 
 export default function Providers({ children }: { children: React.ReactNode }) {
 	return (
@@ -16,9 +16,9 @@ export default function Providers({ children }: { children: React.ReactNode }) {
       enableSystem
       disableTransitionOnChange
 		>
-			<div className="fixed w-screen h-screen inset-0 pointer-events-none">
+			{/* <div className="fixed w-screen h-screen inset-0 pointer-events-none">
       <Snowfall />
-			</div>
+			</div> */}
       <QueryClientProvider client={queryClient}>
         {children}
         {/* <ReactQueryDevtools /> */}

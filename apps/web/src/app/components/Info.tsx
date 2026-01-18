@@ -1,6 +1,16 @@
-import { TooltipContent, TooltipTrigger , Tooltip } from "@/components/ui/tooltip";
+import {
+  TooltipContent,
+  TooltipTrigger,
+  Tooltip,
+} from "@/components/ui/tooltip";
 import ProgressiveImage from "@/components/utils/ProgressiveImage";
-import { SiFacebook, SiGithub, SiGmail, SiInstagram, type IconType } from "@icons-pack/react-simple-icons";
+import {
+  SiFacebook,
+  SiGithub,
+  SiGmail,
+  SiInstagram,
+  type IconType,
+} from "@icons-pack/react-simple-icons";
 import { Dot } from "lucide-react";
 import type { Route } from "next";
 import Image from "next/image";
@@ -35,8 +45,7 @@ const links: LinkItem[] = [
   },
 ];
 
-
-export default function Info() { 
+export default function Info() {
   return (
     <section className="flex flex-col gap-8 w-full">
       <ProgressiveImage
@@ -52,7 +61,7 @@ export default function Info() {
             he/him
           </span>
         </h1>
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-2 flex-wrap">
           <h2>suwizx</h2>
           <Dot />
           <div className="flex items-center gap-3">
@@ -79,7 +88,6 @@ export default function Info() {
                   rel="noopener noreferrer"
                   target="_blank"
                   title="วงแหวนเว็บ"
-                  
                 >
                   <img
                     alt="วงแหวนเว็บ"
@@ -102,6 +110,15 @@ export default function Info() {
               </TooltipContent>
             </Tooltip>
           </div>
+          <Dot />
+          <a
+            href={"/works/resume.pdf"}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline hover:text-primary"
+          >
+            Download CV
+          </a>
         </div>
       </div>
       <div className="flex flex-col gap-1">
