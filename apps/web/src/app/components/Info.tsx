@@ -51,8 +51,8 @@ export default function Info() {
       <ProgressiveImage
         alt="Suwijak Promsatid"
         className="aspect-square w-[150px] rounded-full object-cover object-top"
-        normal="./images/suwijak-promsatid-lossy.jpg"
-        small="./images/suwijak-promsatid-optimize.jpg"
+        normal="/images/suwijak-promsatid-lossy.jpg"
+        small="/images/suwijak-promsatid-optimize.jpg"
       />
       <div className="flex flex-col gap-2">
         <h1 className="font-bold text-2xl">
@@ -126,7 +126,8 @@ export default function Info() {
           <Image
             width={25}
             height={25}
-            src={"./icons/itkmitl.svg"}
+            unoptimized
+            src={"/icons/itkmitl.svg"}
             alt="IT KMITL Logo"
             className="border size-5 border-border bg-card rounded-md p-1 box-content"
           />
@@ -159,6 +160,7 @@ export default function Info() {
           <Image
             width={25}
             height={25}
+            unoptimized
             src={"/icons/ywc.ico"}
             alt="Young Webmaster Camp Logo"
             className="border size-5 border-border bg-card rounded-md p-1 box-content"
@@ -176,7 +178,8 @@ export default function Info() {
           <Image
             width={25}
             height={25}
-            src={"./icons/creasy.svg"}
+            unoptimized
+            src={"/icons/creasy.svg"}
             alt="Creasy Club Logo"
             className="border size-5 border-border bg-card rounded-md p-1 box-content"
           />

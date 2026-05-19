@@ -18,7 +18,8 @@ export default function About() {
               <Image
                 width={20}
                 height={20}
-                src={"./icons/itkmitl.svg"}
+                unoptimized
+                src={"/icons/itkmitl.svg"}
                 alt="IT KMITL Logo"
               />
               IT@KMITL
@@ -33,6 +34,7 @@ export default function About() {
               <Image
                 width={20}
                 height={20}
+                unoptimized
                 src={"/icons/ywc.ico"}
                 alt="Young Webmasters Camp 20 Logo"
               />
@@ -77,6 +79,7 @@ export default function About() {
               <Image
                 width={20}
                 height={20}
+                unoptimized
                 src={"/icons/oph.jpg"}
                 alt="IT Open House Logo"
                 className="rounded-sm"
@@ -93,6 +96,7 @@ export default function About() {
               <Image
                 width={20}
                 height={20}
+                unoptimized
                 src={"/icons/tobe.jpg"}
                 alt="TobeIT Logo"
                 className="rounded-sm"
@@ -109,6 +113,7 @@ export default function About() {
               <Image
                 width={20}
                 height={20}
+                unoptimized
                 src={"/icons/itcamp.jpg"}
                 alt="IT Camp Logo"
                 className="rounded-sm"
@@ -128,7 +133,8 @@ export default function About() {
               <Image
                 width={20}
                 height={20}
-                src={"./icons/creasy.svg"}
+                unoptimized
+                src={"/icons/creasy.svg"}
                 alt="Creasy Club Logo"
                 className="rounded-sm"
               />

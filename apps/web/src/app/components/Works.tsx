@@ -21,8 +21,8 @@ const works: Work[] = [
     description:
       "A website for ToBeIT 68 Camp by IT@KMITL, featuring camp information, participant registration. Includes a Learning Management System and project submission portal. Built with Next.js, Tailwind CSS, and Hono.",
     image: {
-      normal: "./works/lossless/tobe.png",
-      small: "./works/lossy/tobe-lossy.jpg",
+      normal: "/works/lossless/tobe.png",
+      small: "/works/lossy/tobe-lossy.jpg",
     },
   },
   {
@@ -31,8 +31,8 @@ const works: Work[] = [
     description:
       "A website for IT Camp 21 by IT@KMITL, providing event details, schedules, and activities. Built with Next.js, Tailwind CSS, and shadcn/ui.",
     image: {
-      normal: "./works/lossless/itc.png",
-      small: "./works/lossy/itc-lossy.jpg",
+      normal: "/works/lossless/itc.png",
+      small: "/works/lossy/itc-lossy.jpg",
     },
   },
   {
@@ -41,8 +41,8 @@ const works: Work[] = [
     description:
       "A website for IT Open House 2025 by IT@KMITL, showcasing event details, schedules, and activities. Built with Tanstack Start, Tailwind CSS, and shadcn/ui.",
     image: {
-      normal: "./works/lossless/oph.png",
-      small: "./works/lossy/oph-lossy.jpg",
+      normal: "/works/lossless/oph.png",
+      small: "/works/lossy/oph-lossy.jpg",
     },
     link: "https://openhouse.it.kmitl.ac.th",
   },
@@ -53,8 +53,8 @@ const works: Work[] = [
   profile management, and event coordination. Built with Next.js,
   Tailwind CSS, shadcn/ui, and Better Auth.`,
     image: {
-      normal: "./works/lossless/creasy.png",
-      small: "./works/lossy/creasy-lossy.jpg",
+      normal: "/works/lossless/creasy.png",
+      small: "/works/lossy/creasy-lossy.jpg",
     },
     link: "https://creasy.club",
   },
@@ -64,8 +64,8 @@ const works: Work[] = [
     description:
       "A website for Pre-Programming by IT@KMITL, providing activity information, participant registration, and resources. Built with Next.js, Tailwind CSS, and shadcn/ui.",
     image: {
-      normal: "./works/lossless/prepro.png",
-      small: "./works/lossy/prepro-lossy.jpg",
+      normal: "/works/lossless/prepro.png",
+      small: "/works/lossy/prepro-lossy.jpg",
     },
     link: "https://prepro.it.kmitl.ac.th",
   },
@@ -75,8 +75,8 @@ const works: Work[] = [
     description:
       "A website for InfoTech Gate Game 2024 by IT@KMITL, providing event details, schedules, and activities. Built with Next.js, Tailwind CSS, and GSAP.",
     image: {
-      normal: "./works/lossless/itgg.png",
-      small: "./works/lossy/itgg-lossy.jpg",
+      normal: "/works/lossless/itgg.png",
+      small: "/works/lossy/itgg-lossy.jpg",
     },
     // link: "https://itgg.suwizx.dev",
   }
